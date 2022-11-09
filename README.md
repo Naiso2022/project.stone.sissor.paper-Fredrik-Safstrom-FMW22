@@ -1,4 +1,4 @@
-# Stone, scissor, paper)
+# Game: Stone, scissor, paper.
 
 ## Rules
 
