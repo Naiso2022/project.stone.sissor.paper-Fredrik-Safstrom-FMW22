@@ -1,6 +1,6 @@
-# Sten, sax, påse (Stone, sissor, paper)
+# Stone, scissor, paper)
 
-## Spelregler
+## Rules
 
 ![Regler sten, sax, påse](https://github.com/chasacademy-sandra-larsson/js--rock-paper-scissor/blob/main/Rock-paper-scissors-sv.svg.png)
 # project.stone.sissor.paper-Fredrik-Safstrom-FMW22
