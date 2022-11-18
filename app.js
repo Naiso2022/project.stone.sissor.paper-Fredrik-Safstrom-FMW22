@@ -24,8 +24,6 @@ sissor.addEventListener('click', sissorchoice);
 paper.addEventListener('click', paperchoice);
 
 
-
-
 function computerturn(){
      return Math.floor(Math.random() * 3) + 1;
 }
