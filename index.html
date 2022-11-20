@@ -4,38 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project one</title>
-    <link rel="stylesheet" href="project-one.css">
+    <link rel="stylesheet" href="style.css">
+    <title>JavaScript Sten, sax, påse</title>
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <nav>
-                <ul>
-                    <li><a href="#" class="presentation"><b>ACTORS</b></a></li>
-                    <li><a href="#" class="cv"><b>SPECIAL EFFECTS</b></a></li>
-                    <li><a href="#" class="portfolio"><b>BLOOPERS</b></a></li>
-                    <li><a href="#" class="contact"><b>CONTACT</b></a></li>
-                    <li><a href="#" class="home"><b>HOME</b></a></li>
-                </ul>
-            </nav>
-        </header>
-        <left-side class="left-side"><img src="./water.jpg" alt="Water" class="water"></left-side>
-        <main class="main">
-            <div class="midsection">
-                <h1>Wild eyes never lies.</h1>
-                <h2>We will always remember that wild look in a world as unlikely as it was beautiful.</h2>
-                <div class="buttons">
-                    <div class="button1">TRAILER</div>
-                    <div class="button2">READ MORE</div>
-                </div>
-            </div>
-            <div class="pic"><img src="./woman.jpg" alt="Woman" class="woman"></div>
-        </main>
-        <right-side class="right-side"><img src="./flower.jpg" alt="Red flower" class="flower"></right-side>
-        <footer class="footer">
-            <img src="./socialmedia.jpg" alt="Socialmedia-logos" class="socialmedia">
-        </footer>
+    <div class="choises">
+        <p class="stone button">Sten</p>
+        <p class="sissor button">Sax</p>
+        <p class="paper button">Påse</p>
     </div>
+    <div class="answerbox">
+        <div class="answerboxTwo">
+            <p class="winner"></p>
+            <p class="humananswer"></p>
+            <p class="computeranswer"></p>
+        </div>
+            <p class="message"></p>
+            <label class="score">Din poäng: </label>
+            <p class="humanscore score">0</p><br>
+            <label class="score">Datorns poäng: </label>
+            <p class="computerscore score">0</p>
+            <p class="restartButton">Restart</p>
+    </div>
+<script src="app.js"></script>
 </body>
 </html>
