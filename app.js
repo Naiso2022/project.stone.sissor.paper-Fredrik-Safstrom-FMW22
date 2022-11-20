@@ -26,7 +26,7 @@ paper.addEventListener('click', paperchoice);
 
 function computerturn(){
      return Math.floor(Math.random() * 3) + 1;
-}
+     }
 
 
 function stonechoice(){
@@ -80,9 +80,7 @@ function stonechoice(){
         winner.style.border = 'solid black';
         winner.style.backgroundColor = 'white';
         }
-
-}
-
+        }
 
 function sissorchoice(){
 
@@ -95,7 +93,7 @@ function sissorchoice(){
         winner.textContent = 'Oavgjort!';
         winner.style.border = 'solid black';
         winner.style.backgroundColor = 'white';
-    }
+        }
     
     
     else if (computerchoice === 3){
@@ -115,7 +113,7 @@ function sissorchoice(){
         choises.classList.add("choisesTwo");
         setGameOver()
         }
-    }
+        }
     
     else if (computerchoice === 1){
         answerboxTwo.classList.remove("answerboxFour");
@@ -135,7 +133,7 @@ function sissorchoice(){
         setGameOver()
         }
         }
-}
+        }
 
 
 function paperchoice(){
@@ -189,24 +187,30 @@ function paperchoice(){
         setGameOver();
         }
         }
-}
+        }
 
 
 function setGameOver() {
     restartButton.classList.remove("restartButton");
     restartButton.classList.add("displayRestartButton");
     restartButton.addEventListener('click', newGame);
-}
-
+    }
 
 function newGame() {
     choises.classList.add("choises");
     choises.classList.remove("choisesTwo");
-    message.classList.add("choisesTwo");
-    answerboxTwo.classList.remove("answerboxThree");
-    answerboxTwo.classList.add("answerboxFour");
+    message.classList.remove("messageTwo");
+    message.classList.remove("messageThree");
+    message.textContent = '';
+    restartButton.classList.add("restartButton");
     humancounter = 0;
     computercounter = 0;
     humanscore.textContent = humancounter;
     computerscore.textContent = computercounter;
-}
+    answerboxTwo.classList.remove("answerboxThree");
+    humananswer.textContent = '';
+    computeranswer.textContent = '';
+    winner.textContent = '';
+    winner.style.backgroundColor = 'white';
+    winner.style.border = '0';
+    }
